@@ -1,6 +1,4 @@
-/* app.css */
 
-/* Removed unused keyframes for typing effect */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -12,5 +10,3 @@
     transform: translateY(0);
   }
 }
-
-/* Add any other existing styles here */

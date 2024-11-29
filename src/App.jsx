@@ -5,7 +5,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import bannerImage from './assets/banner.png';
+import bannerImage from './assets/banner1.png';
 import patternImage from './assets/pattern.png'; // Import the pattern image
 import FileUpload from './components/FileUpload';
 import InvoicesTable from './components/InvoicesTable';
@@ -72,7 +72,7 @@ function App() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSubtitleIndex((prevIndex) => (prevIndex + 1) % subtitles.length);
-    }, 4000); // Change subtitle every 4 seconds
+    }, 2000); // Change subtitle every 4 seconds
 
     return () => clearInterval(interval);
   }, [subtitles.length]);
@@ -103,7 +103,7 @@ function App() {
                 <GradientText>
                   {!typewriterCompleted ? (
                     <Typewriter
-                      words={["Simplify your billing, effortlessly."]}
+                      words={[" Simplify your billing, effortlessly."]}
                       loop={false}
                       cursor
                       cursorStyle=""
@@ -136,7 +136,7 @@ function App() {
         </div>
 
         {/* Main Content Section */}
-        <div ref={uploadSectionRef} className="max-w-[1200px] mx-auto p-8 space-y-6">
+        <div ref={uploadSectionRef} className="max-w-[1100px] mx-auto p-8 space-y-6">
           {/* File Upload Section */}
           <Card className="border-border">
             <CardHeader>
